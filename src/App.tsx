@@ -4,7 +4,7 @@ import myPhoto from './assets/photo.jpg'
 const NAV_ITEMS = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 const SKILLS = {
-  Backend: ['PHP/Laravel', 'Node.js/Express', 'C#/ASP.NET Core', 'Java', 'Python'],
+  Backend: ['PHP/Laravel', 'Node.js/TypeScript', 'C#/ASP.NET Core', 'Java', 'Python'],
   Databases: ['MySQL', 'PostgreSQL', 'Redis', 'Supabase'],
   'API & Auth': ['REST API', 'WebSocket/Socket.IO', 'JWT/OAuth', 'GraphQL', 'Postman'],
   Frontend: ['React.js', 'TypeScript', 'JavaScript ES6+', 'HTML5/CSS3','Zustand','Pixi.js', 'Tailwind CSS'],
@@ -15,10 +15,11 @@ const SKILLS = {
 const PROJECTS = [
   {
     id: '01',
-    title: 'Streaming Platform',
-    subtitle: 'Telecomm1 Production Backend',
+    title: 'MediaBox',
+    subtitle: 'High-Load Streaming Backend and modern SPA frontend for IPTV service',
     year: '2025',
     status: 'Live',
+    link: 'https://tv-api.telecomm1.com/',
     description: 'Production-grade streaming backend with real-time WebSocket delivery, geo-restriction engine, traffic limits, and Redis pub/sub architecture. Built full authentication for SPA and TV APK clients using Laravel Sanctum.',
     stack: ['Laravel', 'Node.js', 'Redis', 'MySQL', 'WebSocket', 'JWT', 'Linux'],
     color: 'amber',
@@ -124,7 +125,7 @@ function Nav() {
 
 function Hero() {
   const [typed, setTyped] = useState('')
-  const phrase = 'Backend Developer'
+  const phrase = 'Fullstack Developer'
   useEffect(() => {
     let i = 0
     const t = setInterval(() => {
@@ -171,7 +172,7 @@ function Hero() {
 
             <p className="animate-fade-in-up opacity-0 delay-400 mb-10 max-w-lg leading-relaxed"
               style={{ color: 'var(--color-text)', fontSize: '1.05rem', lineHeight: 1.8 }}>
-              I build <span style={{ color: 'var(--color-bright)', fontWeight: 600 }}>production-grade backends</span> and clean frontends — high-load REST APIs, real-time WebSocket services, Redis-backed architectures, all the way to the UI. Based in Kutaisi, building things that scale.
+              I Am Fullstack Developer From Tbilisi — building <span style={{ color: 'var(--color-bright)', fontWeight: 600 }}>production-grade backends</span> and clean frontends — high-load REST APIs, real-time WebSocket services, Redis-backed architectures, all the way to the UI.  building things that scale.
             </p>
 
             <div className="animate-fade-in-up opacity-0 delay-500 flex flex-wrap gap-4">
@@ -194,7 +195,7 @@ function Hero() {
               {[
                 { num: '5+', label: 'Projects Shipped' },
                 { num: '3+', label: 'Tech Stacks' },
-                { num: '2025', label: 'BSc CS Expected' },
+                { num: '2026', label: 'BSc CS Expected' },
               ].map(s => (
                 <div key={s.label} className="p-5 text-center card-hover" style={{ background: 'var(--color-panel)', border: '1px solid var(--color-border)' }}>
                   <div className="text-3xl font-bold mb-1" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-amber)' }}>{s.num}</div>
@@ -215,9 +216,11 @@ function Hero() {
                 <div><span style={{ color: 'var(--color-teal)' }}>›</span> <span style={{ color: 'var(--color-muted)' }}>whoami</span></div>
                 <div style={{ color: 'var(--color-bright)' }}>toma_danelia</div>
                 <div><span style={{ color: 'var(--color-teal)' }}>›</span> <span style={{ color: 'var(--color-muted)' }}>cat role.txt</span></div>
-                <div style={{ color: 'var(--color-amber)' }}>Backend Developer // Full-Stack</div>
-                <div><span style={{ color: 'var(--color-teal)' }}>›</span> <span style={{ color: 'var(--color-muted)' }}>ls skills/</span></div>
-                <div style={{ color: 'var(--color-text)' }}>PHP Laravel Node.js ASP.NET React AWS</div>
+                <div style={{ color: 'var(--color-amber)' }}>Fullstack Developer</div>
+                <div><span style={{ color: 'var(--color-teal)' }}>›</span> <span style={{ color: 'var(--color-muted)' }}>ls skills/backend/</span></div>
+                <div style={{ color: 'var(--color-text)' }}>PHP Laravel Node.js TypeScript ASP.NET AWS</div>
+                <div><span style={{ color: 'var(--color-teal)' }}>›</span> <span style={{ color: 'var(--color-muted)' }}>ls skills/frontend/</span></div>
+                <div style={{ color: 'var(--color-text)' }}>React Javascript HTML CSS Tailwind Zustand Pixi.js axios</div>
                 <div className="flex items-center gap-1">
                   <span style={{ color: 'var(--color-teal)' }}>›</span>
                   <span className="animate-blink" style={{ color: 'var(--color-amber)' }}>█</span>
@@ -547,7 +550,7 @@ function Contact() {
         <div className={`mt-20 pt-8 flex items-center justify-between flex-wrap gap-4 transition-all duration-700 delay-300 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           style={{ borderTop: '1px solid var(--color-border)' }}>
           <span className="text-xs" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-muted)' }}>
-            © 2025 Toma Danelia — Kutaisi, Georgia
+            © 2025 Toma Danelia — Tbilisi, Georgia
           </span>
           <span className="text-xs" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-muted)' }}>
             Built with React · TypeScript · Tailwind v4
