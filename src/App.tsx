@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './index.css'
-
+import myPhoto from './assets/photo.jpg'
 const NAV_ITEMS = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
 const SKILLS = {
@@ -516,12 +516,22 @@ function Contact() {
             I'm open to backend, full-stack, or API engineering roles. Let's talk about what you're building.
           </p>
         </div>
-
+        <div className={`flex justify-center mb-12 transition-all duration-700 delay-100 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+  <div className="relative">
+    <div className="w-40 h-40 rounded-sm overflow-hidden"
+      style={{ border: '2px solid var(--color-amber)', boxShadow: '0 0 40px rgba(245,166,35,0.2)' }}>
+      <img src={myPhoto} alt="Toma Danelia" className="w-full h-full object-cover" />
+    </div>
+    {/* decorative corner */}
+    <div className="absolute -bottom-2 -right-2 w-full h-full rounded-sm"
+      style={{ border: '1px solid var(--color-border)', zIndex: -1 }} />
+  </div>
+</div>
         <div className={`grid grid-cols-1 md:grid-cols-3 gap-5 transition-all duration-700 delay-200 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {[
             { label: 'Email', value: 'toma.danelia@email.com', icon: '✉', href: 'mailto:toma.danelia@email.com' },
-            { label: 'LinkedIn', value: '/in/toma-danelia', icon: '⟶', href: '#' },
-            { label: 'GitHub', value: 'github.com/toma-danelia', icon: '⟶', href: '#' },
+            { label: 'LinkedIn', value: '/in/toma-danelia', icon: '⟶', href: 'https://www.linkedin.com/in/toma-danelia-864895366/' },
+            { label: 'GitHub', value: '/tomadanelia', icon: '⟶', href: 'https://github.com/tomadanelia' },
           ].map(c => (
             <a key={c.label} href={c.href}
               className="p-6 text-center card-hover block"
