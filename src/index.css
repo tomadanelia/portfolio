@@ -9,8 +9,8 @@
   --color-muted: #3d5166;
   --color-text: #c8d8e8;
   --color-bright: #e8f4ff;
-  --color-amber: #f5a623;
-  --color-amber-dim: #8b5e10;
+  --color-amber: #2776F5;
+  --color-amber-dim: #1d5cc0;
   --color-teal: #00d4aa;
   --color-teal-dim: #004d3e;
 
@@ -30,7 +30,7 @@ html {
 body {
   background-color: var(--color-void);
   color: var(--color-text);
-  font-family: var(--font-display);
+  font-family: system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

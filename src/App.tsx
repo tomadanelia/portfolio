@@ -160,7 +160,7 @@ function Hero() {
             <h1 className="animate-fade-in-up opacity-0 delay-200 mb-4 leading-none"
               style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(3rem, 7vw, 5.5rem)', fontWeight: 800, color: 'var(--color-bright)' }}>
               Toma<br />
-              <span style={{ color: 'var(--color-amber)', fontStyle: 'italic', fontFamily: 'var(--font-serif)', fontSize: '0.9em' }}>Danelia</span>
+              <span style={{ color: 'var(--color-amber)', fontSize: 'clamp(3rem, 7vw, 5.5rem)' }}>Danelia</span>
             </h1>
 
             <div className="animate-fade-in-up opacity-0 delay-300 mb-8 h-10 flex items-center">
@@ -236,11 +236,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
-        <span className="text-xs tracking-widest" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-muted)' }}>scroll</span>
-        <div className="h-8 w-px" style={{ background: 'linear-gradient(to bottom, var(--color-amber), transparent)' }} />
-      </div>
+
     </section>
   )
 }
