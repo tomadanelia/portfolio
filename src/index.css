@@ -14,7 +14,7 @@
   --color-teal: #00d4aa;
   --color-teal-dim: #004d3e;
 
-  --font-display: 'Syne', sans-serif;
+  --font-display: 'sans Serif', serif;
   --font-mono: 'Space Mono', monospace;
   --font-serif: 'Instrument Serif', serif;
 }
@@ -30,7 +30,7 @@ html {
 body {
   background-color: var(--color-void);
   color: var(--color-text);
-  font-family: system-ui, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

@@ -160,7 +160,7 @@ function Hero() {
             <h1 className="animate-fade-in-up opacity-0 delay-200 mb-4 leading-none"
               style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(3rem, 7vw, 5.5rem)', fontWeight: 800, color: 'var(--color-bright)' }}>
               Toma<br />
-              <span style={{ color: 'var(--color-amber)', fontSize: 'clamp(3rem, 7vw, 5.5rem)' }}>Danelia</span>
+              <span style={{ color: 'var(--color-amber)',fontFamily: "Space Grotesk", fontSize: 'clamp(3rem, 7vw, 5.5rem)' }}>Danelia</span>
             </h1>
 
             <div className="animate-fade-in-up opacity-0 delay-300 mb-8 h-10 flex items-center">
